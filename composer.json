@@ -1,5 +1,10 @@
 {
-    "autoload": {
-      "psr-4": {"":"src/"}
+  "autoload": {
+    "psr-4": {
+      "Controllers\\": "src/Controllers/",
+      "Dao\\": "src/Dao/",
+      "Views\\": "src/Views/",
+      "Utilities\\": "src/Utilities/"
     }
+  }
 }
