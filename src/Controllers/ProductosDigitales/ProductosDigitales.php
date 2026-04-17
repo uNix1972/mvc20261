@@ -8,9 +8,11 @@ class ProductosDigitales extends \Controllers\PublicController
 {
     public function run(): void
     {
-        $viewData = [];
+        $viewData = array();
 
-        $viewData["productos"] = \Dao\Productos\Productos::getAll();
+        $productos = \Dao\Productos\Productos::getAll();
+
+        $viewData["productos"] = $productos;
 
         Renderer::render("products/productos", $viewData);
     }
